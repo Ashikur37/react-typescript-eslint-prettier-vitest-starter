@@ -21,6 +21,8 @@
   },
   "include": [
     ".eslintrc.cjs",
+    "tailwind.config.js",
+    "postcss.config.js",
     "vite.config.ts",
     "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
