@@ -1,24 +1,8 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { useReducer, useState } from 'react';
 import './App.css';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import ContextApi from './components/examples/ContextApi';
 
-export function App() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
-  );
+function App() {
+  return <ContextApi />;
 }
-
-export function WrappedApp() {
-  return (
-    <HashRouter>
-      <App />
-    </HashRouter>
-  );
-}
-// export default WrappedApp;
+export default App;
